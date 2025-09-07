@@ -7,7 +7,8 @@ services:
     region: Kenya # change if you prefer another region
     branch: main
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn alx_travel_app_0x03.wsgi:application
+    startCommand: python manage.py runserver 0.0.0.0:10000
+
     envVars:
       - key: DEBUG
         value: "False"
