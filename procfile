@@ -1,0 +1,2 @@
+web: gunicorn alx_travel_app_0x03.wsgi:application
+worker: celery -A alx_travel_app_0x03 worker --loglevel=info
